@@ -63,11 +63,11 @@ ul {
   font-size: 60px;
 }
 .active {
-  background: goldenrod;
+  background: lightblue;
   color: black;
 }
 .active:hover {
-  color: goldenrod;
+  color: lightblue;
   background: #000;
 }
 .inactive {
@@ -95,6 +95,18 @@ th {
   min-width: 25vw;
   padding: 1em 0;
   text-align: center;
+}
+.key{
+  display: flex; 
+  margin: 2em 0;
+  align-items: center;
+  width: 50vw;
+  justify-content: center;
+}
+.key>div{
+  margin: 0 0.5em;
+  height: 3vh;
+  width: 2vw;
 }
 @media only screen and (max-width: 700px) {
   body {
@@ -126,5 +138,8 @@ th {
   td,
   th {
     min-width: 45vw;
+  }
+  .key>div{
+    margin: 0 1em;
   }
 }
