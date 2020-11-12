@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   overflow-x: hidden;
 }
@@ -62,28 +62,20 @@ ul {
 .module > a > i {
   font-size: 60px;
 }
-.active_1 {
+.active {
   background: lightblue;
   color: black;
 }
-.active_1:hover {
+.active:hover {
   color: lightblue;
   background: #000;
 }
-.active_2 {
-  background: skyblue;
-  color: black;
-}
-.active_2:hover {
-  color: skyblue;
-  background: #000;
-}
 .filiere {
-  background: palegreen;
+  background: khaki;
   color: black;
 }
 .filiere:hover {
-  color: palegreen;
+  color: khaki;
   background: #000;
 }
 .inactive {
