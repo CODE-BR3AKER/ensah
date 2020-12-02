@@ -5,6 +5,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   overflow-x: hidden;
+  background: var(--background);
+  color: var(--main);
 }
 h1,
 h2,
@@ -15,8 +17,11 @@ h2 {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+#message{
+  margin-top: 1em;
+}
 h3{
-  color: #545454;
+  color: var(--dark-gray);
 }
 p {
   margin: 1em auto;
@@ -25,10 +30,10 @@ p {
 }
 a {
   text-decoration: none;
-  color: rgb(25, 159, 204);
+  color: var(--dark-blue);
 }
 a:hover {
-  color: darkgray;
+  color: var(--light-gray);
 }
 ul {
   list-style-type: square;
@@ -66,39 +71,39 @@ ul {
   font-size: 60px;
 }
 .active {
-  background: lightblue;
-  color: black;
+  background: var(--light-blue);
+  color: var(--icon);
 }
 .active:hover {
-  color: lightblue;
-  background: #000;
+  color: var(--light-blue);
+  background: var(--icon-hover);
 }
 .filiere {
-  background: lightgreen;
-  color: black;
+  background: var(--light-green);
+  color: var(--icon);
 }
 .filiere:hover {
-  color: lightgreen;
-  background: #000;
+  color: var(--light-green);
+  background: var(--icon-hover);
 }
 .inactive {
-  background: darkgray;
-  color: black;
+  background: var(--light-gray);
+  color: var(--icon);
 }
 .inactive:hover {
-  background: #000;
-  color: darkgray;
+  background: var(--light-gray);
+  color: var(--icon);
 }
 footer {
   margin-top: 20vh;
 }
 footer a {
-  color: forestgreen;
+  color: var(--dark-green);
 }
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid var(--main);
   border-collapse: collapse;
 }
 td,
@@ -124,21 +129,21 @@ th {
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  color: salmon;
+  color: var(--light-red);
   margin: 2em auto;
   width: 30vw;
 }
 .video_plug:hover {
   cursor: pointer;
-  color: red;
+  color: var(--dark-red);
 }
 .video_plug i {
   font-size: 36px;
   margin-right: 0.25em;
 }
 .nouveau sup {
-  background: red;
-  color: white;
+  background: var(--dark-red);
+  color: var(--background);
   padding: 0.25em;
   border-radius: 0.5em;
   font-weight: bold;
@@ -147,8 +152,8 @@ th {
   top: -0.75em;
 }
 .updated {
-  background: green;
-  color: white;
+  background: var(--updated);
+  color: var(--background);
   font-weight: bold;
   font-size: 10px;
   position: relative;
@@ -157,8 +162,8 @@ th {
   border-radius: 0.5em;
 }
 .prof {
-  background: purple;
-  color: white;
+  background: var(--prof);
+  color: var(--background);
   font-weight: bold;
   font-size: 10px;
   position: relative;
@@ -175,6 +180,24 @@ th {
 .filiere__description img {
   display: block;
   width: 50vw;
+}
+#light,#dark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 0.5em 0;
+  margin: 1em;
+  border-radius: 10px;
+}
+#light i, #dark i{
+  font-size: 30px;
+  margin-right: 5px;
+}
+.mood{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 700px) {
   body {

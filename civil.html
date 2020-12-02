@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link id="theme" rel="stylesheet" href="light-theme.css" />
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +17,11 @@
     <h3>
         <a href="index.html"> Acceuil </a>
     </h3>
-    <hr>
+    <hr />
+    <div class="mood">
+        <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
+        <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
+    </div>
     <div class="filiere__description">
         <img src="Assets/civil.jpg" alt="civil engineering">
         <div class="filiere__description__text">

@@ -7,7 +7,9 @@
   <title>&#127979; cp ensah</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link id="theme" rel="stylesheet" href="light-theme.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +19,11 @@
     <a href="#resources"> Resources </a>
   </h3>
   <hr />
-  <h2>Un petit message &#128204;</h2>
+  <div class="mood">
+    <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
+    <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
+  </div>
+  <h2 id="message">Un petit message &#128204;</h2>
   <p>
     - Bonjour je m'appelle ZAKARIA étudiant avec vous à l'école nationale des
     sciences appliquées Alhoceima. Tout d'abord soyez le bienvenue chez nous,
