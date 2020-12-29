@@ -1,201 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#127979; cp ensah</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link id="theme" rel="stylesheet" href="light-theme.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&#127979; cp ensah</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link id="theme" rel="stylesheet" href="light-theme.css" />
-  <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <h1>MÉCANIQUE 1</h1>
-  <h3>
-    <a href="index.html"> Acceuil </a>
-  </h3>
-  <hr />
-  <div class="mood">
-    <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
-    <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
-  </div>
-  <h2>Le but de module &#127937;</h2>
-  <p>
-    - La mécanique du point est l'étude du mouvement des points matériels.
-    Alors que la cinématique permet d'étudier les relations entre les
-    paramètres du mouvement (position, vitesse, accélération, etc.), la
-    mécanique du point permet de prédire l'évolution de ces paramètres en
-    connaissant les causes du mouvement. Celles-ci peuvent être les
-    interactions de contact comme le frottement et la poussée, ou à distance
-    comme l'attraction gravitationnelle et les interactions
-    électromagnétiques. Toutes ces interactions sont modélisées par un objet
-    physique unique : la force. Ainsi, en connaissant la force subie par le
-    point matériel à tout moment, il est possible de prédire le mouvement.
-  </p>
-  <!--<h2>A retenir &#128077;</h2>-->
-  <h2>Les chapitres &#128196;</h2>
-  <p>
-    0- DES OUTILS MATHÉMATIQUES<br />
-    1- CINÉMATIQUE DU POINT <br />
-    2- CHANGEMENTS DE RÉFÉRENTIELS<br />
-    3- LOIS DE NEWTON ET RÉFÉRENTIELS GALILÉENS<br />
-    4- TRAVAIL, PUISSANCE, ÉNERGIE<br />
-    5- OSCILLATEURS MÉCANIQUES <br />
-    6- OSCILLATIONS FORCÉES, RÉSONANCE <br />
-    7- INTERACTION GRAVITATIONNELLE <br />
-    8- RÉFERENTIELS NON GALILÉENS <br />
-    9- SYSTÈMES À DEUX CORPS <br />
-    10- TRAJECTOIRES D’UN SYSTÈME À DEUX CORPS
-  </p>
-  <h2>Les resources &#128218;</h2>
-  <center>
-    <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td> <a href="Resources/s1/Mec1 Cours 2020.pdf" download="Mec1 Cours 2020.pdf">Cours</a></td>
-        <td>&#128196; Tous les chaps</td>
-      </tr>
-      <tr>
-        <td> <a href="Resources/s1/Mec1 TD 1 2020.pdf" download="Mec1 TD 1 2020.pdf">Excercices</a></td>
-        <td>&#128196; TD 1</td>
-      </tr>
-      <tr>
-        <td> <a href="Resources/s1/Mec1 TD 2 2020.pdf" download="Mec1 TD 2 2020.pdf">Excercices</a></td>
-        <td>&#128196; TD 2</td>
-      </tr>
-      <tr>
-        <td> <a href="Resources/s1/Mec1 TD 2 2020 sol.pdf" download="Mec1 TD 2 2020 sol.pdf">Excercices</a></td>
-        <td>&#128196; TD 2 Sol</td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/1uuEveTsX7DNVuFw2HQmZK7aEwTliUsQP/view?usp=sharing"
-            target="_blank"> Video</a></td>
-        <td>&#127909; Chap 0 <sup class="prof">PROF</sup></td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/1uuEveTsX7DNVuFw2HQmZK7aEwTliUsQP/view" target="_blank"> Video</a>
-        </td>
-        <td>&#127909; Chap 1 <sup class="prof">PROF</sup></td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/16-IvesZfciojVfytURKDrquiXO7hizVL/view" target="_blank"> Video</a>
-        </td>
-        <td>&#127909; Chap 2 <sup class="prof">PROF</sup></td>
-      </tr>
-    </table>
-    <h3>Examens des années dernières &#128203;</h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td><a href="Resources/s1/Mec1 DS 2019.pdf" download="Mec1 DS 2019.pdf">Devoir</a></td>
-        <td>&#128196; DS 2019</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s1/Mec1 EXAM 2019.pdf" download="Mec1 EXAM 2019.pdf">Devoir</a></td>
-        <td>&#128196; EXAM 2019</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s1/Mec1 DS 2020.pdf" download="Mec1 DS 2020.pdf">Devoir</a></td>
-        <td>&#128196; DS 2020</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s1/Mec1 EXAM 2020.pdf" download="Mec1 EXAM 2020.pdf">Devoir</a></td>
-        <td>&#128196; EXAM 2020</td>
-      </tr>
-    </table>
-    <h3> Resources des années précedentes &#128450;</h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/Mecanique_du_point-min.pdf" download="Meca 1 Livre.pdf">Livre</a>
-        </td>
-        <td>&#128196; Tous les chaps Cours + TD</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/tmIntMult (1)-min.pdf" download="Meca 1 Chap 0.pdf">
-            Cours
-          </a>
-        </td>
-        <td>&#128196; Chap 0 Cours</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/MecDuPointMat_Polycop_Ex-min.pdf" download="Meca 1 Ex Sup.pdf">
-            Excercices</a>
-        </td>
-        <td>&#128196; Tous les chapitres</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="https://www.youtube.com/watch?v=aCGYq3tp1w0&list=PL04lqUPnMF_NtdUGsQvCcQuoe0_rv3cVs" target="_blank">
-            Videos</a>
-        </td>
-        <td>&#127909; Tous les Chap Cours</td>
-      </tr>
-      <tr>
-        <td>
-          <a href=" https://www.youtube.com/watch?v=1DOYYTIM5-g" target="_blank">
-            Videos</a>
-        </td>
-        <td>&#127909; Résumé</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/Meca1 Cours 1-min.pdf" download="Meca1 Cours 1.pdf">Cours</a>
-        </td>
-        <td>&#128196; Cours 2008-09</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/Meca1 TD 1-min.pdf" download="Meca1 TD 1.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ratt 2014</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/Meca1 TD 2-min.pdf" download="Meca1 TD 2.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 2014-15</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s1/Meca1 TD 3-min.pdf" download="Meca1 TD 3.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Cours ENSA-M 2014 </td>
-      </tr>
-    </table>
-    <div class="key">
-      <div>&#128196;</div>
-      <span> Document</span>
-      <div>&#127909;</div>
-      <span> Video</span>
-      <div>&#128421;</div>
-      <span> Platforme</span>
-    </div>
-  </center>
-  <footer>
+  <body>
+    <h1>MÉCANIQUE 1</h1>
+    <h3>
+      <a href="index.html"> Acceuil </a>
+    </h3>
     <hr />
+    <div class="mood">
+      <div id="light" onclick="swapStyleSheet('light-theme.css')">
+        <i class="material-icons">wb_sunny</i> Light
+      </div>
+      <div id="dark" onclick="swapStyleSheet('dark-theme.css')">
+        <i class="material-icons">nights_stay</i> Dark
+      </div>
+    </div>
+    <h2>Le but de module &#127937;</h2>
+    <p>
+      - La mécanique du point est l'étude du mouvement des points matériels.
+      Alors que la cinématique permet d'étudier les relations entre les
+      paramètres du mouvement (position, vitesse, accélération, etc.), la
+      mécanique du point permet de prédire l'évolution de ces paramètres en
+      connaissant les causes du mouvement. Celles-ci peuvent être les
+      interactions de contact comme le frottement et la poussée, ou à distance
+      comme l'attraction gravitationnelle et les interactions
+      électromagnétiques. Toutes ces interactions sont modélisées par un objet
+      physique unique : la force. Ainsi, en connaissant la force subie par le
+      point matériel à tout moment, il est possible de prédire le mouvement.
+    </p>
+    <!--<h2>A retenir &#128077;</h2>-->
+    <h2>Les chapitres &#128196;</h2>
+    <p>
+      0- DES OUTILS MATHÉMATIQUES<br />
+      1- CINÉMATIQUE DU POINT <br />
+      2- CHANGEMENTS DE RÉFÉRENTIELS<br />
+      3- LOIS DE NEWTON ET RÉFÉRENTIELS GALILÉENS<br />
+      4- TRAVAIL, PUISSANCE, ÉNERGIE<br />
+      5- OSCILLATEURS MÉCANIQUES <br />
+      6- OSCILLATIONS FORCÉES, RÉSONANCE <br />
+      7- INTERACTION GRAVITATIONNELLE <br />
+      8- RÉFERENTIELS NON GALILÉENS <br />
+      9- SYSTÈMES À DEUX CORPS <br />
+      10- TRAJECTOIRES D’UN SYSTÈME À DEUX CORPS
+    </p>
+    <h2>Les resources &#128218;</h2>
     <center>
-      Developée par
-      <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 Cours 2020.pdf"
+              download="Mec1 Cours 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Tous les chaps</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 TD 1 2020.pdf"
+              download="Mec1 TD 1 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 1</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 TD 2 2020.pdf"
+              download="Mec1 TD 2 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 TD 2 2020 sol.pdf"
+              download="Mec1 TD 2 2020 sol.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2 Sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 TD 3 2020.pdf"
+              download="Mec1 TD 3 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 3</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 TD 3 2020 sol.pdf"
+              download="Mec1 TD 3 2020 sol.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 3 Sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/1uuEveTsX7DNVuFw2HQmZK7aEwTliUsQP/view?usp=sharing"
+              target="_blank"
+            >
+              Video</a
+            >
+          </td>
+          <td>&#127909; Chap 0 <sup class="prof">PROF</sup></td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/1uuEveTsX7DNVuFw2HQmZK7aEwTliUsQP/view"
+              target="_blank"
+            >
+              Video</a
+            >
+          </td>
+          <td>&#127909; Chap 1 <sup class="prof">PROF</sup></td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/16-IvesZfciojVfytURKDrquiXO7hizVL/view"
+              target="_blank"
+            >
+              Video</a
+            >
+          </td>
+          <td>&#127909; Chap 2 <sup class="prof">PROF</sup></td>
+        </tr>
+      </table>
+      <h3>Examens des années dernières &#128203;</h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s1/Mec1 DS 2019.pdf" download="Mec1 DS 2019.pdf"
+              >Devoir</a
+            >
+          </td>
+          <td>&#128196; DS 2019</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 EXAM 2019.pdf"
+              download="Mec1 EXAM 2019.pdf"
+              >Devoir</a
+            >
+          </td>
+          <td>&#128196; EXAM 2019</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s1/Mec1 DS 2020.pdf" download="Mec1 DS 2020.pdf"
+              >Devoir</a
+            >
+          </td>
+          <td>&#128196; DS 2020</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mec1 EXAM 2020.pdf"
+              download="Mec1 EXAM 2020.pdf"
+              >Devoir</a
+            >
+          </td>
+          <td>&#128196; EXAM 2020</td>
+        </tr>
+      </table>
+      <h3>Resources des années précedentes &#128450;</h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Mecanique_du_point-min.pdf"
+              download="Meca 1 Livre.pdf"
+              >Livre</a
+            >
+          </td>
+          <td>&#128196; Tous les chaps Cours + TD</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/tmIntMult (1)-min.pdf"
+              download="Meca 1 Chap 0.pdf"
+            >
+              Cours
+            </a>
+          </td>
+          <td>&#128196; Chap 0 Cours</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/MecDuPointMat_Polycop_Ex-min.pdf"
+              download="Meca 1 Ex Sup.pdf"
+            >
+              Excercices</a
+            >
+          </td>
+          <td>&#128196; Tous les chapitres</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://www.youtube.com/watch?v=aCGYq3tp1w0&list=PL04lqUPnMF_NtdUGsQvCcQuoe0_rv3cVs"
+              target="_blank"
+            >
+              Videos</a
+            >
+          </td>
+          <td>&#127909; Tous les Chap Cours</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href=" https://www.youtube.com/watch?v=1DOYYTIM5-g"
+              target="_blank"
+            >
+              Videos</a
+            >
+          </td>
+          <td>&#127909; Résumé</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s1/Meca1 Cours 1-min.pdf"
+              download="Meca1 Cours 1.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Cours 2008-09</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s1/Meca1 TD 1-min.pdf" download="Meca1 TD 1.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ratt 2014</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s1/Meca1 TD 2-min.pdf" download="Meca1 TD 2.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2014-15</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s1/Meca1 TD 3-min.pdf" download="Meca1 TD 3.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Cours ENSA-M 2014</td>
+        </tr>
+      </table>
+      <div class="key">
+        <div>&#128196;</div>
+        <span> Document</span>
+        <div>&#127909;</div>
+        <span> Video</span>
+        <div>&#128421;</div>
+        <span> Platforme</span>
+      </div>
     </center>
-  </footer>
-</body>
-
+    <footer>
+      <hr />
+      <center>
+        Developée par
+        <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      </center>
+    </footer>
+  </body>
 </html>
