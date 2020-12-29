@@ -1,293 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#127979; cp ensah</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link id="theme" rel="stylesheet" href="light-theme.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&#127979; cp ensah</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link id="theme" rel="stylesheet" href="light-theme.css" />
-  <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <h1>Physique 3</h1>
-  <h3>
-    <a href="index.html"> Acceuil </a>
-  </h3>
-  <hr />
-  <div class="mood">
-    <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
-    <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
-  </div>
-  <h2>Le but de module &#127937;</h2>
-  <p>
-    - Le terme électrocinétique peut désigner, soit l'ensemble des phénomènes
-    et des lois relatifs aux charges électriques en mouvement1, soit leur
-    étude, et plus particulièrement celle du déplacement de l'électricité dans
-    les milieux matériels, notamment les circuits électriques.
-    L'électrocinétique s'oppose à l'électrostatique, ensemble ou étude des
-    phénomènes et des lois relatifs aux charges immobiles.<br />
-    - Il est d'ailleurs possible de définir l'électromagnétisme comme l'étude
-    du champ électromagnétique et de son interaction avec les particules
-    chargées. Le terme d'électromagnétisme fait référence au fait que les
-    phénomènes électriques et magnétiques ont été vus comme indépendants
-    jusqu'en 1860, quand Maxwell a montré qu'ils n'étaient que deux aspects
-    d'un même ensemble de phénomènes.
-  </p>
-  <!--<h2>A retenir &#128077;</h2>-->
-  <h2>Les chapitres &#128196;</h2>
-  <p>
-    <b>Électrocinétique:</b><br />
-    1- Lois générales de l'éléctrocinétique<br />
-    2- Régime continu<br />
-    3- Régime transitoire<br />
-    4- Grandeurs et impédance<br />
-    <b>Électromagnétisme:</b><br />
-    1- Notions mathématiques d’introduction à l’électromagnétisme<br />
-    2- Régime variable<br />
-    3- Equations de Maxwell-Faraday<br />
-    4- Ondes électromagnétiques
-  </p>
-  <h2>Les resources &#128218;</h2>
-  <center>
-    <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </table>
-    <h3>Resources des années précedentes &#128450;</h3>
-    <h4><u>L'éléctrocinétique</u></h4>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine Cours 1.pdf" download="Phy Cine Cours 1.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 1 et 2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine Cours 2.pdf" download="Phy Cine Cours 2.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 3</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine Cours 3.pdf" download="Phy Cine Cours 3.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 4</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine Cours 4.pdf" download="Phy Cine Cours 4.pdf">Cours</a>
-        </td>
-        <td>&#128196; Cours V2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 1.pdf" download="Phy3 Cine TD 1.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Conductivité électrique d'un métal</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 2.pdf" download="Phy3 Cine TD 2.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Stabilisation de courant</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 3.pdf" download="Phy3 Cine TD 3.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Cellule R-2R</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 4.pdf" download="Phy3 Cine TD 4.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Théorème de Kennely</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 5.pdf" download="Phy3 Cine TD 5.pdf">Excercices</a>
-        </td>
-        <td>&#128196; G.Thévenin et de Norton eq</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 6.pdf" download="Phy3 Cine TD 6.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Modèles de Thévenin Norton et sources liées</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 7.pdf" download="Phy3 Cine TD 7.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Théorème de superposition</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 8.pdf" download="Phy3 Cine TD 8.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Circuit du 1er ordre à plusieurs mailles</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 9.pdf" download="Phy3 Cine TD 9.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Circuits RC et RL en parallèle</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 10.pdf" download="Phy3 Cine TD 10.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Module et argument d'une impédance complexe</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 11.pdf" download="Phy3 Cine TD 11.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Circuit d'aide à la commutation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 12.pdf" download="Phy3 Cine TD 12.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Impédance d'un dipole indépendante de la pulsation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 13.pdf" download="Phy3 Cine TD 13.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Adaptation en puissance</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 14.pdf" download="Phy3 Cine TD 14.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Puissance et facteur de puissance</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 15.pdf" download="Phy3 Cine TD 15.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Calcul des éléments d'un montage</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 16.pdf" download="Phy3 Cine TD 16.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Facteur de puissance d'un atelier</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 17.pdf" download="Phy3 Cine TD 17.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Pont de Wien</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 18.pdf" download="Phy3 Cine TD 18.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Filtre rejecteur de bande</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 19.pdf" download="Phy3 Cine TD 19.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Circuit dèphaseur pur</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 20.pdf" download="Phy3 Cine TD 20.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Convertisseur tension-courant</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 21.pdf" download="Phy3 Cine TD 21.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Stabilité d'une source de courant</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 22.pdf" download="Phy3 Cine TD 22.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Exec + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 23.pdf" download="Phy3 Cine TD 23.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Exec + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Cine TD 24.pdf" download="Phy3 Cine TD 24.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Exec + sol</td>
-      </tr>
-    </table>
-    <h4><u>L'éléctromagnétisme</u></h4>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Mag Cours 1.pdf" download="Phy3 Mag Cours 1.pdf">Cours</a>
-        </td>
-        <td>&#128196; Cours v1</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Mag Cours 2.pdf" download="Phy3 Mag Cours 2.pdf">Cours</a>
-        </td>
-        <td>&#128196; Cours v2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Mag TD 1.pdf" download="Phy3 Mag TD 1.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Excercices</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Phy3 Mag TD 2.pdf" download="Phy3 Mag TD 2.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Excercices</td>
-      </tr>
-    </table>
-    <div class="key">
-      <div>&#128196;</div>
-      <span> Document</span>
-      <div>&#127909;</div>
-      <span> Video</span>
-      <div>&#128421;</div>
-      <span> Platforme</span>
-    </div>
-  </center>
-  <footer>
+  <body>
+    <h1>Physique 3</h1>
+    <h3>
+      <a href="index.html"> Acceuil </a>
+    </h3>
     <hr />
+    <div class="mood">
+      <div id="light" onclick="swapStyleSheet('light-theme.css')">
+        <i class="material-icons">wb_sunny</i> Light
+      </div>
+      <div id="dark" onclick="swapStyleSheet('dark-theme.css')">
+        <i class="material-icons">nights_stay</i> Dark
+      </div>
+    </div>
+    <h2>Le but de module &#127937;</h2>
+    <p>
+      - Le terme électrocinétique peut désigner, soit l'ensemble des phénomènes
+      et des lois relatifs aux charges électriques en mouvement1, soit leur
+      étude, et plus particulièrement celle du déplacement de l'électricité dans
+      les milieux matériels, notamment les circuits électriques.
+      L'électrocinétique s'oppose à l'électrostatique, ensemble ou étude des
+      phénomènes et des lois relatifs aux charges immobiles.<br />
+      - Il est d'ailleurs possible de définir l'électromagnétisme comme l'étude
+      du champ électromagnétique et de son interaction avec les particules
+      chargées. Le terme d'électromagnétisme fait référence au fait que les
+      phénomènes électriques et magnétiques ont été vus comme indépendants
+      jusqu'en 1860, quand Maxwell a montré qu'ils n'étaient que deux aspects
+      d'un même ensemble de phénomènes.
+    </p>
+    <!--<h2>A retenir &#128077;</h2>-->
+    <h2>Les chapitres &#128196;</h2>
+    <p>
+      <b>Électrocinétique:</b><br />
+      1- Lois générales de l'éléctrocinétique<br />
+      2- Régime continu<br />
+      3- Régime transitoire<br />
+      4- Grandeurs et impédance<br />
+      <b>Électromagnétisme:</b><br />
+      1- Notions mathématiques d’introduction à l’électromagnétisme<br />
+      2- Régime variable<br />
+      3- Equations de Maxwell-Faraday<br />
+      4- Ondes électromagnétiques
+    </p>
+    <h2>Les resources &#128218;</h2>
     <center>
-      Developée par
-      <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine Cours 1 2020.pdf"
+              download="Phy3 Cine Cours 1 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 1 Cinétique</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 1 2020.pdf"
+              download="Phy3 Cine TD 1 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 1 Cinétique</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Mag Cours 1 2020.pdf"
+              download="Phy3 Mag Cours 1 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 1 Magnétique</td>
+        </tr>
+      </table>
+      <h3>Resources des années précedentes &#128450;</h3>
+      <h4><u>L'éléctrocinétique</u></h4>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine Cours 1.pdf"
+              download="Phy Cine Cours 1.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 1 et 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine Cours 2.pdf"
+              download="Phy Cine Cours 2.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 3</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine Cours 3.pdf"
+              download="Phy Cine Cours 3.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 4</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine Cours 4.pdf"
+              download="Phy Cine Cours 4.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Cours V2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 1.pdf"
+              download="Phy3 Cine TD 1.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Conductivité électrique d'un métal</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 2.pdf"
+              download="Phy3 Cine TD 2.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Stabilisation de courant</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 3.pdf"
+              download="Phy3 Cine TD 3.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Cellule R-2R</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 4.pdf"
+              download="Phy3 Cine TD 4.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Théorème de Kennely</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 5.pdf"
+              download="Phy3 Cine TD 5.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; G.Thévenin et de Norton eq</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 6.pdf"
+              download="Phy3 Cine TD 6.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Modèles de Thévenin Norton et sources liées</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 7.pdf"
+              download="Phy3 Cine TD 7.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Théorème de superposition</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 8.pdf"
+              download="Phy3 Cine TD 8.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Circuit du 1er ordre à plusieurs mailles</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 9.pdf"
+              download="Phy3 Cine TD 9.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Circuits RC et RL en parallèle</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 10.pdf"
+              download="Phy3 Cine TD 10.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Module et argument d'une impédance complexe</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 11.pdf"
+              download="Phy3 Cine TD 11.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Circuit d'aide à la commutation</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 12.pdf"
+              download="Phy3 Cine TD 12.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Impédance d'un dipole indépendante de la pulsation</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 13.pdf"
+              download="Phy3 Cine TD 13.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Adaptation en puissance</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 14.pdf"
+              download="Phy3 Cine TD 14.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Puissance et facteur de puissance</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 15.pdf"
+              download="Phy3 Cine TD 15.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Calcul des éléments d'un montage</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 16.pdf"
+              download="Phy3 Cine TD 16.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Facteur de puissance d'un atelier</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 17.pdf"
+              download="Phy3 Cine TD 17.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Pont de Wien</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 18.pdf"
+              download="Phy3 Cine TD 18.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Filtre rejecteur de bande</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 19.pdf"
+              download="Phy3 Cine TD 19.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Circuit dèphaseur pur</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 20.pdf"
+              download="Phy3 Cine TD 20.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Convertisseur tension-courant</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 21.pdf"
+              download="Phy3 Cine TD 21.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Stabilité d'une source de courant</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 22.pdf"
+              download="Phy3 Cine TD 22.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Exec + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 23.pdf"
+              download="Phy3 Cine TD 23.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Exec + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Cine TD 24.pdf"
+              download="Phy3 Cine TD 24.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Exec + sol</td>
+        </tr>
+      </table>
+      <h4><u>L'éléctromagnétisme</u></h4>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Mag Cours 1.pdf"
+              download="Phy3 Mag Cours 1.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Cours v1</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Mag Cours 2.pdf"
+              download="Phy3 Mag Cours 2.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Cours v2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Mag TD 1.pdf"
+              download="Phy3 Mag TD 1.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Excercices</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Phy3 Mag TD 2.pdf"
+              download="Phy3 Mag TD 2.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Excercices</td>
+        </tr>
+      </table>
+      <div class="key">
+        <div>&#128196;</div>
+        <span> Document</span>
+        <div>&#127909;</div>
+        <span> Video</span>
+        <div>&#128421;</div>
+        <span> Platforme</span>
+      </div>
     </center>
-  </footer>
-</body>
-
+    <footer>
+      <hr />
+      <center>
+        Developée par
+        <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      </center>
+    </footer>
+  </body>
 </html>
