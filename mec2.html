@@ -1,227 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#127979; cp ensah</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link id="theme" rel="stylesheet" href="light-theme.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&#127979; cp ensah</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link id="theme" rel="stylesheet" href="light-theme.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <h1>Mécanique 2</h1>
-  <h3>
-    <a href="index.html"> Acceuil </a>
-  </h3>
-  <hr />
-  <div class="mood">
-    <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
-    <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
-  </div>
-  <h2>Le but de module &#127937;</h2>
-  <p>
-    - La mécanique du solide est la partie de la mécanique qui s'intéresse aux
-    objets que l'on ne peut réduire en un point matériel. Cela permet
-    notamment de décrire et modéliser les rotations de l'objet sur
-    lui-même.<br />
-    - L'objet est lui-même composé de points matériels, que ce soit des points
-    discrets — par exemple un assemblage de boules reliées par des baguettes
-    de masse négligeable, chaque boule pouvant être modélisée par un point
-    matériel — ou un ensemble continu de points. En général, on suppose le
-    solide indéformable ; la déformation du solide relève de la mécanique des
-    milieux continus. <br />
-    - La mécanique du solide est donc une branche de la mécanique traitant du
-    comportement des mécanismes constitués de pièces rigides en général, et
-    parfois déformables.<br />
-    - L'objectif principal étant la détermination des performances d'un
-    système en vue d'établir un dimensionnement adapté à l'usage envisagé, ou
-    la validation de ces grandeurs.
-  </p>
-  <h2>Les chapitres &#128196;</h2>
-  <p>
-    0- Préliminaires<br />
-    1- Les torseurs<br />
-    2- Cinématique des solides parfaits <br />
-    3- Inertique des solides (ou géométrie des masses)<br />
-    4- Cinétique des solides
-  </p>
-  <h2>Les resources &#128218;</h2>
-  <center>
-    <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td><a href="Resources/s3/Mec2 Cours 1 2020.pdf" download="Mec2 Cours 1 2020.pdf">Cours</a></td>
-        <td>&#128196; Chap 0,1</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s3/Mec2 Cours 2 2020.pdf" download="Mec2 Cours 2 2020.pdf">Cours</a></td>
-        <td>&#128196; Chap 2</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s3/Mec2 TD 1 2020.pdf" download="Mec2 TD 1 2020.pdf">Excercices</a></td>
-        <td>&#128196; TD 1 + sol</td>
-      </tr>
-      <tr>
-        <td><a href="Resources/s3/Mec2 TD 2 2020.pdf" download="Mec2 TD 2 2020.pdf">Excercices</a></td>
-        <td>&#128196; TD 2 + sol</td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/1UNiT4CMLl_GHABIuZzLgUfhVOgp6BB-f/view" target="_blank"> Video</a>
-        </td>
-        <td>&#127909; Chap 1 (Torseurs) <sup class="prof">PROF</sup> </td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/11hSBzrjEF-JGA3Gr5IIhxWvSoo8pwq-i/view" target="_blank">Live 17
-            Dec</a>
-        </td>
-        <td>&#127909; Chap 2_1 (Cinéma) <sup class="prof">PROF</sup> </td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/18lxGTFbuldEYzmeaVv555sehgND-Tkr8/view" target="_blank">Live 17
-            Dec</a>
-        </td>
-        <td>&#127909; Chap 2_2 (Cinéma) <sup class="prof">PROF</sup> </td>
-      </tr>
-    </table>
-    <h3>Resources des années précedentes &#128450;</h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 Cours 1.pdf" download="Mec2 Cours 1.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 1</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 Cours 2.pdf" download="Mec2 Cours 2.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 Cours 3.pdf" download="Mec2 Cours 3.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 3</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 Cours 4.pdf" download="Mec2 Cours 4.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 4</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 Cours 5.pdf" download="Mec2 Cours 5.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 5</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 1.pdf" download="Mec2 TD 1.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 1</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 2.pdf" download="Mec2 TD 2.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 3.pdf" download="Mec2 TD 3.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 3</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 4.pdf" download="Mec2 TD 4.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 4</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 5.pdf" download="Mec2 TD 5.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 5</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 6.pdf" download="Mec2 TD 6.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 6</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 7.pdf" download="Mec2 TD 7.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 8.pdf" download="Mec2 TD 8.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 9.pdf" download="Mec2 TD 9.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 10.pdf" download="Mec2 TD 10.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 11.pdf" download="Mec2 TD 11.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 12.pdf" download="Mec2 TD 12.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Mec2 TD 13.pdf" download="Mec2 TD 13.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Ex Facultatifs + sol</td>
-      </tr>
-    </table>
-    <div class="key">
-      <div>&#128196;</div>
-      <span> Document</span>
-      <div>&#127909;</div>
-      <span> Video</span>
-      <div>&#128421;</div>
-      <span> Platforme</span>
-    </div>
-  </center>
-  <footer>
+  <body>
+    <h1>Mécanique 2</h1>
+    <h3>
+      <a href="index.html"> Acceuil </a>
+    </h3>
     <hr />
+    <div class="mood">
+      <div id="light" onclick="swapStyleSheet('light-theme.css')">
+        <i class="material-icons">wb_sunny</i> Light
+      </div>
+      <div id="dark" onclick="swapStyleSheet('dark-theme.css')">
+        <i class="material-icons">nights_stay</i> Dark
+      </div>
+    </div>
+    <h2>Le but de module &#127937;</h2>
+    <p>
+      - La mécanique du solide est la partie de la mécanique qui s'intéresse aux
+      objets que l'on ne peut réduire en un point matériel. Cela permet
+      notamment de décrire et modéliser les rotations de l'objet sur
+      lui-même.<br />
+      - L'objet est lui-même composé de points matériels, que ce soit des points
+      discrets — par exemple un assemblage de boules reliées par des baguettes
+      de masse négligeable, chaque boule pouvant être modélisée par un point
+      matériel — ou un ensemble continu de points. En général, on suppose le
+      solide indéformable ; la déformation du solide relève de la mécanique des
+      milieux continus. <br />
+      - La mécanique du solide est donc une branche de la mécanique traitant du
+      comportement des mécanismes constitués de pièces rigides en général, et
+      parfois déformables.<br />
+      - L'objectif principal étant la détermination des performances d'un
+      système en vue d'établir un dimensionnement adapté à l'usage envisagé, ou
+      la validation de ces grandeurs.
+    </p>
+    <h2>Les chapitres &#128196;</h2>
+    <p>
+      0- Préliminaires<br />
+      1- Les torseurs<br />
+      2- Cinématique des solides parfaits <br />
+      3- Inertique des solides (ou géométrie des masses)<br />
+      4- Cinétique des solides
+    </p>
+    <h2>Les resources &#128218;</h2>
     <center>
-      Developée par
-      <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Mec2 Cours 1 2020.pdf"
+              download="Mec2 Cours 1 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 0,1</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Mec2 Cours 2 2020.pdf"
+              download="Mec2 Cours 2 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Mec2 TD 1 2020.pdf"
+              download="Mec2 TD 1 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 1 + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Mec2 TD 2 2020.pdf"
+              download="Mec2 TD 2 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2 + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/1N-DelJl6whdZrXhlF1Ct2wbgz_E7vpdg/view?usp=sharing"
+              target="_blank"
+            >
+              Video</a
+            >
+          </td>
+          <td>&#127909; Chap 1 (Torseurs) <sup class="prof">PROF</sup></td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/14pZ0nRuojFqNMPjaViGELiMxiX-Yl0P9/view?usp=sharing"
+              target="_blank"
+              >Live 17 Dec</a
+            >
+          </td>
+          <td>&#127909; Chap 2_1 (Cinéma) <sup class="prof">PROF</sup></td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/141F3QDff0onPGsaT-Cf_2VylZ_Z9Ph_r/view?usp=sharing"
+              target="_blank"
+              >Live 17 Dec</a
+            >
+          </td>
+          <td>&#127909; Chap 2_2 (Cinéma) <sup class="prof">PROF</sup></td>
+        </tr>
+      </table>
+      <h3>Resources des années précedentes &#128450;</h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 Cours 1.pdf" download="Mec2 Cours 1.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 1</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 Cours 2.pdf" download="Mec2 Cours 2.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 Cours 3.pdf" download="Mec2 Cours 3.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 3</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 Cours 4.pdf" download="Mec2 Cours 4.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 4</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 Cours 5.pdf" download="Mec2 Cours 5.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 5</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 1.pdf" download="Mec2 TD 1.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 1</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 2.pdf" download="Mec2 TD 2.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 3.pdf" download="Mec2 TD 3.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 3</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 4.pdf" download="Mec2 TD 4.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 4</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 5.pdf" download="Mec2 TD 5.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 5</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 6.pdf" download="Mec2 TD 6.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 6</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 7.pdf" download="Mec2 TD 7.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 8.pdf" download="Mec2 TD 8.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 9.pdf" download="Mec2 TD 9.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 10.pdf" download="Mec2 TD 10.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 11.pdf" download="Mec2 TD 11.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 12.pdf" download="Mec2 TD 12.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Mec2 TD 13.pdf" download="Mec2 TD 13.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Ex Facultatifs + sol</td>
+        </tr>
+      </table>
+      <div class="key">
+        <div>&#128196;</div>
+        <span> Document</span>
+        <div>&#127909;</div>
+        <span> Video</span>
+        <div>&#128421;</div>
+        <span> Platforme</span>
+      </div>
     </center>
-  </footer>
-</body>
-
+    <footer>
+      <hr />
+      <center>
+        Developée par
+        <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      </center>
+    </footer>
+  </body>
 </html>
