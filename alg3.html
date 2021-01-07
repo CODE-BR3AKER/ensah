@@ -1,232 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#127979; cp ensah</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link id="theme" rel="stylesheet" href="light-theme.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&#127979; cp ensah</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link id="theme" rel="stylesheet" href="light-theme.css" />
-  <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <h1>Algèbre 3</h1>
-  <h3>
-    <a href="index.html"> Acceuil </a>
-  </h3>
-  <hr />
-  <div class="mood">
-    <div id="light" onclick="swapStyleSheet('light-theme.css')"><i class="material-icons">wb_sunny</i> Light </div>
-    <div id="dark" onclick="swapStyleSheet('dark-theme.css')"><i class="material-icons">nights_stay</i> Dark </div>
-  </div>
-  <h2>Le but de module &#127937;</h2>
-  <p>
-    - Dans le 2ème semestre vous avez étudier l'algèbre linéaire, alors ce
-    module l'accomplit en étudiant avec détails les formes quadratiques.
-    <br />
-    - En mathématiques, une forme quadratique est un polynôme homogène de
-    degré 2 avec un nombre quelconque de variables.<br />
-    - Les formes quadratiques interviennent dans de nombreux domaines des
-    mathématiques : différents résultats de classification des coniques et
-    plus généralement des quadriques, recherche de minimum ou maximum local
-    d'une fonction de plusieurs variables à partir d'un développement limité,
-    introduction de la courbure des surfaces, analyse en composantes
-    principales en statistiques. Les formes quadratiques entières
-    interviennent en théorie des nombres et en topologie algébrique.
-  </p>
-  <h2>Les chapitres &#128196;</h2>
-  <p>
-    1- Réduction d’endomorphismes et de matrices<br />
-    2- Applications à la résolution des systèmes différentiels<br />
-    3- Formes bilinéaires et Formes quadratiques <br />
-    4- Formes linéaires et Formes quadratiques<br />
-    5- Formes linéaires, Produit mixte et produit vectoriel
-  </p>
-  <h2>Les resources &#128218;</h2>
-  <center>
-    <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 1 2020.pdf" download="Alg3 Cours 1 2020.pdf">Cours</a>
-        </td>
-        <td>&#128196; Chap 1 et 2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 1 2020.pdf" download="Alg3 TD 1 2020.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 1</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 2 2020.pdf" download="Alg3 TD 2 2020.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 3 2020.pdf" download="Alg3 TD 3 2020.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 3</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 4 2020.pdf" download="Alg3 TD 4 2020.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 4</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 5 2020.pdf" download="Alg3 TD 5 2020.pdf">Excercices</a>
-        </td>
-        <td>&#128196; TD 5</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 1 2020 sol_1.pdf" download="Alg3 TD 1 2020 sol_1.pdf">Solution</a>
-        </td>
-        <td>&#128196; TD 1 Corr_1</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 1 2020 sol_2.pdf" download="Alg3 TD 1 2020 sol_2.pdf">Solution</a>
-        </td>
-        <td>&#128196; TD 1 Corr_2</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 2 2020 sol.pdf" download="Alg3 TD 2 2020 sol.pdf">Solution</a>
-        </td>
-        <td>&#128196; TD 2 Corr</td>
-      </tr>
-      <tr>
-        <td><a href="https://drive.google.com/file/d/1KFs8YL40RrWIPhz-Bw-MrHJM-_TGnZNl/view" target="_blank">Video</a>
-        </td>
-        <td>&#127909; TD 2 Corr (ex 5-6)<sup class="prof">PROF</sup></td>
-      </tr>
-    </table>
-    <h3>Resources des années précedentes &#128450;</h3>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 1.pdf" download="Alg3 Cours 1.pdf">Cours</a>
-        </td>
-        <td>&#128196; Methode de Gauss</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 2.pdf" download="Alg3 Cours 2.pdf">Cours</a>
-        </td>
-        <td>&#128196; Diag + trig</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 3.pdf" download="Alg3 Cours 3.pdf">Cours</a>
-        </td>
-        <td>&#128196; Reduction des endo</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 4.pdf" download="Alg3 Cours 4.pdf">Cours</a>
-        </td>
-        <td>&#128196; Reduction des endo</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 5.pdf" download="Alg3 Cours 5.pdf">Cours</a>
-        </td>
-        <td>&#128196; Technique de Jordan</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 6.pdf" download="Alg3 Cours 6.pdf">Cours</a>
-        </td>
-        <td>&#128196; Triangularisation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 7.pdf" download="Alg3 Cours 7.pdf">Cours</a>
-        </td>
-        <td>&#128196; Triangularisation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 Cours 8.pdf" download="Alg3 Cours 8.pdf">Cours</a>
-        </td>
-        <td>&#128196; Triangularisation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 1.pdf" download="Alg3 TD 1.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Devoir + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 2.pdf" download="Alg3 TD 2.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Diagnolisation</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 3.pdf" download="Alg3 TD 3.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Exc + sol</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 4.pdf" download="Alg3 TD 4.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Fascicule d'exc</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 5.pdf" download="Alg3 TD 5.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Réduction d'endom</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 6.pdf" download="Alg3 TD 6.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Sujet + corrigé</td>
-      </tr>
-      <tr>
-        <td>
-          <a href="Resources/s3/Alg3 TD 7.pdf" download="Alg3 TD 7.pdf">Excercices</a>
-        </td>
-        <td>&#128196; Trigonalisation</td>
-      </tr>
-    </table>
-    <div class="key">
-      <div>&#128196;</div>
-      <span> Document</span>
-      <div>&#127909;</div>
-      <span> Video</span>
-      <div>&#128421;</div>
-      <span> Platforme</span>
-    </div>
-  </center>
-  <footer>
+  <body>
+    <h1>Algèbre 3</h1>
+    <h3>
+      <a href="index.html"> Acceuil </a>
+    </h3>
     <hr />
+    <div class="mood">
+      <div id="light" onclick="swapStyleSheet('light-theme.css')">
+        <i class="material-icons">wb_sunny</i> Light
+      </div>
+      <div id="dark" onclick="swapStyleSheet('dark-theme.css')">
+        <i class="material-icons">nights_stay</i> Dark
+      </div>
+    </div>
+    <h2>Le but de module &#127937;</h2>
+    <p>
+      - Dans le 2ème semestre vous avez étudier l'algèbre linéaire, alors ce
+      module l'accomplit en étudiant avec détails les formes quadratiques.
+      <br />
+      - En mathématiques, une forme quadratique est un polynôme homogène de
+      degré 2 avec un nombre quelconque de variables.<br />
+      - Les formes quadratiques interviennent dans de nombreux domaines des
+      mathématiques : différents résultats de classification des coniques et
+      plus généralement des quadriques, recherche de minimum ou maximum local
+      d'une fonction de plusieurs variables à partir d'un développement limité,
+      introduction de la courbure des surfaces, analyse en composantes
+      principales en statistiques. Les formes quadratiques entières
+      interviennent en théorie des nombres et en topologie algébrique.
+    </p>
+    <h2>Les chapitres &#128196;</h2>
+    <p>
+      1- Réduction d’endomorphismes et de matrices<br />
+      2- Applications à la résolution des systèmes différentiels<br />
+      3- Formes bilinéaires et Formes quadratiques <br />
+      4- Formes linéaires et Formes quadratiques<br />
+      5- Formes linéaires, Produit mixte et produit vectoriel
+    </p>
+    <h2>Les resources &#128218;</h2>
     <center>
-      Developée par
-      <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      <h3 class="nouveau">Resources 20-21 <sup>NEW</sup></h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 Cours 1 2020.pdf"
+              download="Alg3 Cours 1 2020.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Chap 1 et 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 1 2020.pdf"
+              download="Alg3 TD 1 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 1</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 2 2020.pdf"
+              download="Alg3 TD 2 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 3 2020.pdf"
+              download="Alg3 TD 3 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 3</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 4 2020.pdf"
+              download="Alg3 TD 4 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 4</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 5 2020.pdf"
+              download="Alg3 TD 5 2020.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; TD 5</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 1 2020 sol_1.pdf"
+              download="Alg3 TD 1 2020 sol_1.pdf"
+              >Solution</a
+            >
+          </td>
+          <td>&#128196; TD 1 Corr_1</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 1 2020 sol_2.pdf"
+              download="Alg3 TD 1 2020 sol_2.pdf"
+              >Solution</a
+            >
+          </td>
+          <td>&#128196; TD 1 Corr_2</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="Resources/s3/Alg3 TD 2 2020 sol.pdf"
+              download="Alg3 TD 2 2020 sol.pdf"
+              >Solution</a
+            >
+          </td>
+          <td>&#128196; TD 2 Corr</td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="https://drive.google.com/file/d/1NiIxw-1T0H9fKZl2fPkvTSjexIWq2SGe/view?usp=sharing"
+              target="_blank"
+              >Video</a
+            >
+          </td>
+          <td>&#127909; TD 2 Corr (ex 5-6)<sup class="prof">PROF</sup></td>
+        </tr>
+      </table>
+      <h3>Resources des années précedentes &#128450;</h3>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 1.pdf" download="Alg3 Cours 1.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Methode de Gauss</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 2.pdf" download="Alg3 Cours 2.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Diag + trig</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 3.pdf" download="Alg3 Cours 3.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Reduction des endo</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 4.pdf" download="Alg3 Cours 4.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Reduction des endo</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 5.pdf" download="Alg3 Cours 5.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Technique de Jordan</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 6.pdf" download="Alg3 Cours 6.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Triangularisation</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 7.pdf" download="Alg3 Cours 7.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Triangularisation</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 Cours 8.pdf" download="Alg3 Cours 8.pdf"
+              >Cours</a
+            >
+          </td>
+          <td>&#128196; Triangularisation</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 1.pdf" download="Alg3 TD 1.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Devoir + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 2.pdf" download="Alg3 TD 2.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Diagnolisation</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 3.pdf" download="Alg3 TD 3.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Exc + sol</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 4.pdf" download="Alg3 TD 4.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Fascicule d'exc</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 5.pdf" download="Alg3 TD 5.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Réduction d'endom</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 6.pdf" download="Alg3 TD 6.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Sujet + corrigé</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="Resources/s3/Alg3 TD 7.pdf" download="Alg3 TD 7.pdf"
+              >Excercices</a
+            >
+          </td>
+          <td>&#128196; Trigonalisation</td>
+        </tr>
+      </table>
+      <div class="key">
+        <div>&#128196;</div>
+        <span> Document</span>
+        <div>&#127909;</div>
+        <span> Video</span>
+        <div>&#128421;</div>
+        <span> Platforme</span>
+      </div>
     </center>
-  </footer>
-</body>
-
+    <footer>
+      <hr />
+      <center>
+        Developée par
+        <a href="https://www.instagram.com/zarkti_zakaria/"> ZARKTI</a>
+      </center>
+    </footer>
+  </body>
 </html>
