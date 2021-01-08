@@ -1,33 +1,33 @@
-*{
-    --light-gray: #A9A9A9; /*for links*/
-    --dark-gray: #545454; /*for h3*/
-    --light-blue: #add8e6; /*for modules*/
-    --dark-blue: rgb(25, 159, 204); /*for links*/
-    --light-green: #90EE90; /*for departements*/
-    --dark-green: #228B22; /*for credit*/
-    --light-red: #FA8072; /*for ytb plug*/
-    --dark-red: #FF0000; /*for ytb & sup*/
-    --updated: #008000; /*for sup*/
-    --prof: #800080; /*for sup*/
-    --background: #ffffff; 
-    --main: #000000;
-    --icon: #000000;
-    --icon-hover: #000000;
-    --btn:rgb(237,242,247);
+* {
+  --light-gray: #a9a9a9; /*for links*/
+  --dark-gray: #1f1f1f; /*for h3*/
+  --light-blue: #add8e6; /*for modules*/
+  --dark-blue: rgb(25, 159, 204); /*for links*/
+  --light-green: #90ee90; /*for departements*/
+  --dark-green: #228b22; /*for credit*/
+  --light-red: #fa8072; /*for ytb plug*/
+  --dark-red: #ff0000; /*for ytb & sup*/
+  --updated: #008000; /*for sup*/
+  --prof: #800080; /*for sup*/
+  --background: #ffffff;
+  --main: #000000;
+  --icon: #000000;
+  --icon-hover: #000000;
+  --btn: rgb(237, 242, 247);
 }
-#dark{
-    color: var(--main);
-    background: var(--btn);
+#dark {
+  color: var(--main);
+  background: var(--btn);
 }
-#dark:hover{
-    cursor: pointer;
-    color: var(--btn);
-    background: var(--main);
+#dark:hover {
+  cursor: pointer;
+  color: var(--btn);
+  background: var(--main);
 }
-#light{
-    color: var(--dark-gray);
-    background: var(--btn);
+#light {
+  color: var(--dark-gray);
+  background: var(--btn);
 }
-#light:hover{
-    cursor: pointer;
+#light:hover {
+  cursor: pointer;
 }

@@ -1,44 +1,44 @@
-*{
-    --light-gray: #d1d1d1; /*for links*/
-    --dark-gray: #b9b9b9; /*for h3*/
-    --light-blue: #add8e6; /*for modules*/
-    --dark-blue: rgb(25, 159, 204); /*for links*/
-    --light-green: #d7fa77; /*for departements*/
-    --dark-green: #43ff43; /*for credit*/
-    --light-red: #FA8072; /*for ytb plug*/
-    --dark-red: #FF0000; /*for ytb & sup*/
-    --updated: #008000; /*for sup*/
-    --prof: #800080; /*for sup*/
-    --background: #002936; /*#002936*/
-    --main: #ffffff;
-    --icon: #002936;
-    --icon-hover: #002936;
+* {
+  --light-gray: #d1d1d1; /*for links*/
+  --dark-gray: #b9b9b9; /*for h3*/
+  --light-blue: #add8e6; /*for modules*/
+  --dark-blue: rgb(25, 159, 204); /*for links*/
+  --light-green: #d7fa77; /*for departements*/
+  --dark-green: #43ff43; /*for credit*/
+  --light-red: #fa8072; /*for ytb plug*/
+  --dark-red: #ff0000; /*for ytb & sup*/
+  --updated: #008000; /*for sup*/
+  --prof: #800080; /*for sup*/
+  --background: #212121; /*#002936*/
+  --main: #ffffff;
+  --icon: #212121;
+  --icon-hover: #212121;
 }
-#dark{
-    color: var(--background);
-    background: var(--light-gray);
+#dark {
+  color: var(--background);
+  background: var(--light-gray);
 }
-#dark:hover{
-    cursor: pointer;
+#dark:hover {
+  cursor: pointer;
 }
-#light{
-    color: var(--icon);
-    background: var(--dark-green);
+#light {
+  color: var(--icon);
+  background: var(--dark-green);
 }
-#light:hover{
-    cursor: pointer;
-    color: var(--icon);
-    background: var(--main);
+#light:hover {
+  cursor: pointer;
+  color: var(--icon);
+  background: var(--main);
 }
-.active:hover{
-    border: 1px solid var(--light-blue);
+.active:hover {
+  border: 1px solid var(--light-blue);
 }
-.filiere:hover{
-    border: 1px solid var(--light-green);
+.filiere:hover {
+  border: 1px solid var(--light-green);
 }
-td a{
-    color: #ebffb3;
+td a {
+  color: #ebffb3;
 }
-td a:hover{
-    color: #d7fa77;
+td a:hover {
+  color: #d7fa77;
 }
